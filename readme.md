@@ -119,7 +119,7 @@ AMPページ内でインタラクティブにコンテンツを操作できる�
 ### [amp-experiment](https://ampbyexample.com/components/amp-experiment/)
 GAと連携しユーザーテストなどの検証を行うためのコンポーネント。
 ### [amp-facebook-comments](https://ampbyexample.com/components/amp-facebook-comments/)
-Facebookのコメントモジュールを埋め込むためのコンポーネント。
+[Facebook](https://ja-jp.facebook.com/)のコメントモジュールを埋め込むためのコンポーネント。
 ### [amp-facebook-like](https://ampbyexample.com/components/amp-facebook-like/)
 Facebookの「いいね」ボタンを埋め込むためのコンポーネント。
 ### [amp-facebook-page](https://ampbyexample.com/components/amp-facebook-page/)
@@ -135,13 +135,34 @@ HTML5における`form`要素とそれに付随する各要素を代替するた
 ### [amp-fx-collection](https://ampbyexample.com/components/amp-fx-collection/)
 パララックスやフェードインなど各種視覚効果を制御するためのコンポーネント。
 ### [amp-fx-flying-carpet](https://ampbyexample.com/components/amp-fx-flying-carpet/)
-![フライングカーペット](/img/flying-carpet-ad.gif)  
-フライングカーペットを設置するためのコンポーネント。
+フライングカーペットを設置するためのコンポーネント。  
+![フライングカーペット](/img/flying-carpet-ad.gif)
+### [amp-geo](https://ampbyexample.com/components/amp-geo/)
+ISOの国コードをベースにユーザーのロケーションを取得できるコンポーネント。
+### [amp-gfycat](https://ampbyexample.com/components/amp-gfycat/)
+[fycat](https://gfycat.com/)からanimated GIFを読み込むためのコンポーネント。
+### [amp-gist](https://ampbyexample.com/components/amp-gist/)
+[Gist](https://gist.github.com/)から単一のファイル、またはGist全体を読み込むためのコンポーネント。
+### [amp-google-document-embed](https://ampbyexample.com/components/amp-google-document-embed/)
+HTML内でPDFなどを表示させるためのコンポーネント。
+### [amp-google-vrview-image](https://ampbyexample.com/components/amp-google-vrview-image/)
+AMP内で360°のVRメディアを読み込むためのコンポーネント。
+### [amp-hulu](https://ampbyexample.com/components/amp-hulu/)
+[Hulu](https://www.happyon.jp/)の動画を埋め込むためのコンポーネント。
+### [amp-iframe](https://ampbyexample.com/components/amp-iframe/)
+HTML5における`iframe`要素を代替するためのコンポーネント。AMP対応していないページを見せる場合に有効。
+### [amp-ima-video](https://ampbyexample.com/components/amp-ima-video/)
+[IMA SDK](https://developers.google.com/interactive-media-ads/docs/sdks/html5/)によるインストリーム広告を読み込むためのコンポーネント。
+### [amp-image-lightbox](https://ampbyexample.com/components/amp-image-lightbox/)
+ライトボックスを表示させるためのコンポーネント。
+### [amp-image-slider](https://ampbyexample.com/components/amp-image-slider/)
+ふたつの重なったイメージ画像の上で境界線を左右に動かし、比較するような動きをつけるためのコンポーネント。
+### [amp-img](https://ampbyexample.com/components/amp-img/)
+HTML5における`img`要素を代替するためのコンポーネント。
+### [amp-instagram](https://ampbyexample.com/components/amp-instagram/)
+[instagram](https://www.instagram.com/?hl=ja)上の写真や動画を読み込むためのコンポーネント。
 ### []()
-### []()
-### []()
-### []()
-### []()
+
 ### []()
 ### []()
 ### []()
