@@ -115,10 +115,28 @@ AMPページ内でインタラクティブにコンテンツを操作できる�
 ### [amp-date-picker](https://ampbyexample.com/components/amp-date-picker/)
 単一の日時や一定範囲の期間を選択表示するために使用するコンポーネント。
 ### [amp-dynamic-css-classes](https://ampbyexample.com/components/amp-dynamic-css-classes/)
-
-### []()
-### []()
-### []()
+動的に要素のClassを操作するためのコンポーネント。
+### [amp-experiment](https://ampbyexample.com/components/amp-experiment/)
+GAと連携しユーザーテストなどの検証を行うためのコンポーネント。
+### [amp-facebook-comments](https://ampbyexample.com/components/amp-facebook-comments/)
+Facebookのコメントモジュールを埋め込むためのコンポーネント。
+### [amp-facebook-like](https://ampbyexample.com/components/amp-facebook-like/)
+Facebookの「いいね」ボタンを埋め込むためのコンポーネント。
+### [amp-facebook-page](https://ampbyexample.com/components/amp-facebook-page/)
+Facebookページを埋め込むためのコンポーネント。
+### [amp-facebook](https://ampbyexample.com/components/amp-facebook/)
+Facebookの投稿や動画などを埋め込むためのコンポーネント。
+### [amp-fit-text](https://ampbyexample.com/components/amp-fit-text/)
+該当エリア内のテキストサイズを自動調節してくれるコンポーネント。
+### [amp-font](https://ampbyexample.com/components/amp-font/)
+フォントの読み込みを制御するためのコンポーネント。
+### [amp-form](https://ampbyexample.com/components/amp-form/)
+HTML5における`form`要素とそれに付随する各要素を代替するためのコンポーネント。
+### [amp-fx-collection](https://ampbyexample.com/components/amp-fx-collection/)
+パララックスやフェードインなど各種視覚効果を制御するためのコンポーネント。
+### [amp-fx-flying-carpet](https://ampbyexample.com/components/amp-fx-flying-carpet/)
+![フライングカーペット](/img/flying-carpet-ad.gif)  
+フライングカーペットを設置するためのコンポーネント。
 ### []()
 ### []()
 ### []()
