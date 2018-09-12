@@ -154,20 +154,25 @@ HTML5における`iframe`要素を代替するためのコンポーネント。A
 ### [amp-ima-video](https://ampbyexample.com/components/amp-ima-video/)
 [IMA SDK](https://developers.google.com/interactive-media-ads/docs/sdks/html5/)によるインストリーム広告を読み込むためのコンポーネント。
 ### [amp-image-lightbox](https://ampbyexample.com/components/amp-image-lightbox/)
-ライトボックスを表示させるためのコンポーネント。
+画像をビューポートいっぱいに表示させるためのコンポーネント。
 ### [amp-image-slider](https://ampbyexample.com/components/amp-image-slider/)
 ふたつの重なったイメージ画像の上で境界線を左右に動かし、比較するような動きをつけるためのコンポーネント。
 ### [amp-img](https://ampbyexample.com/components/amp-img/)
 HTML5における`img`要素を代替するためのコンポーネント。
 ### [amp-instagram](https://ampbyexample.com/components/amp-instagram/)
 [instagram](https://www.instagram.com/?hl=ja)上の写真や動画を読み込むためのコンポーネント。
-### []()
-
-### []()
-### []()
-### []()
-### []()
-### []()
+### [amp-jwplayer](https://ampbyexample.com/components/amp-jwplayer/)
+[JW Player](https://www.jwplayer.com/)の動画を読み込むためのコンポーネント。
+### [amp-install-serviceworker](https://ampbyexample.com/components/amp-install-serviceworker/)
+Google AMPなどからService Workerをインストールするためのコンポーネント。
+### [amp-kaltura-player](https://ampbyexample.com/components/amp-kaltura-player/)
+[Kaltura](https://corp.kaltura.com/)から動画を読み込むためのコンポーネント。
+### [amp-lightbox-gallery](https://ampbyexample.com/components/amp-lightbox-gallery/)
+`amp-img`などのコンポーネントに対してlightboxの動きをつけるためのコンポーネント。
+### [amp-lightbox](https://ampbyexample.com/components/amp-lightbox/)
+一般的なlightboxの要素を提供するためのコンポーネント。
+### [amp-list](https://ampbyexample.com/components/amp-list/)
+CORS JSONによる動的なコンテンツ表示をするためのコンポーネント。
 ### []()
 ### []()
 ### []()
