@@ -26,7 +26,8 @@ Googleでの検索において、検索結果の上部に表示され、訪問�
   </body>
 </html>
 ```
-## AMP化チェックリスト
+## AMPチェック
+AMP HTMLに対して以下項目をチェックする。
 ### meta部分
 - [ ] `html`要素とともにamp、または⚡が宣言されているか。
 - [ ] `head`の最初に`<meta charset="utf-8">`が記述されているか。
@@ -61,9 +62,77 @@ Googleでの検索において、検索結果の上部に表示され、訪問�
 - [ ] CSS部分の合計サイズは50kb以内に収まっているか。
 - [ ] CSSは`head`内の`<style amp-custom> ~ </style>`でのみ書き込まれているか。
 - [ ] CSS内のプロパティで`!important`が指定されているものはないか。
-- [ ] あああ
+- [ ] JavaScriptやjQueryを外部から読み込んでいないか。または、それらがHTML内に記述されていないか。
 ### SEO関連
 - [ ] 導入されている広告システムはGoogle AdSenseのみか。
 - [ ] 導入されているアナリティクスはGoogle Tag Managerのみか。
-### その他
-- [ ] あああ
+## AMP検証
+AMP化対象のソースコードを見ながら以下項目を検証し、AMP化する際に影響度の高いものをまとめていく。
+- [ ] JavaScript/jQueryがどれだけ使われている(読み込まれている)か。(AMP内では専用ライブラリしか使えないため)
+  - [ ] そのうち、AMPコンポーネントで代替できるものはどれか。
+  - [ ] そのうち、使用されていないもの/AMP化に際して影響範囲の狭そうなものはどれか。
+  - [ ] そのうち、広告やアナリティクスに関するものはどれか。
+- [ ] 使われているCSSの記述の合計サイズは50kb以下に収まるか。
+- [ ] 使用中のCSSプロパティの中に`!important`がどれだけ含まれているか。
+- [ ] 仕様が制限されている要素がコード内にどれだけ含まれているか。
+
+## AMPコンポーネント
+JavaScriptが使用できないため、動的な要素はAMPのライブラリからインクルードして設置することになる。
+### [amp-3d-gltf](https://ampbyexample.com/components/amp-3d-gltf/)
+glTFフォーマットのアセットを読み込み3Dモデルを表示するためのコンポーネント。
+### [amp-access-laterpay](https://ampbyexample.com/components/amp-access-laterpay/)
+[Laterpay](https://www.laterpay.net/)と連携するためのコンポーネント。後述の`amp-access`が必要になる。
+### [amp-access](https://ampbyexample.com/components/amp-access/)
+ログイン機能などユーザー認証に関する動的要素を組み込めるコンポーネント。
+### [amp-accordion](https://ampbyexample.com/components/amp-accordion/)
+要素にアコーディオンの動きをつけるためのコンポーネント。
+### [amp-ad](https://ampbyexample.com/components/amp-ad/)
+AMP内での広告表示に関するコンポーネント。
+### [amp-analytics](https://ampbyexample.com/components/amp-analytics/)
+AMP内でのアナリティクスに関するコンポーネント。
+### [amp-anim](https://ampbyexample.com/components/amp-anim/)
+gifやwebPなどのアニメーションのある静止画フォーマットをサポートするためのコンポーネント。該当ファイルはHTTPSで読み込む必要がある。
+### [amp-app-banner](https://ampbyexample.com/components/amp-app-banner/)
+アプリのCTAを表示するためのコンポーネント。
+### [amp-audio](https://ampbyexample.com/components/amp-audio/)
+HTML5における`audio`要素を代替するためのコンポーネント。
+### [amp-bind](https://ampbyexample.com/components/amp-bind/)
+AMPページ内でインタラクティブにコンテンツを操作できるようにするコンポーネント。
+### [amp-bodymovin-animation](https://ampbyexample.com/components/amp-bodymovin-animation/)
+[Bodymovin](https://github.com/airbnb/lottie-web)アニメーションをサポートするためのコンポーネント。After Effectsから出力されるjsonファイルを読み込んで使う。
+### [amp-brid-player](https://ampbyexample.com/components/amp-brid-player/)
+[Brid Player](https://www.brid.tv/)をサポートするためのコンポーネント。
+### [amp-brightcove](https://ampbyexample.com/components/amp-brightcove/)
+[Brightcove](https://www.brightcove.com/en/)をサポートするためのコンポーネント。
+### [amp-call-tracking](https://ampbyexample.com/components/amp-call-tracking/)
+電話番号を動的に表示しコールトラッキングを有効にするためのコンポーネント。
+### [amp-carousel](https://ampbyexample.com/components/amp-carousel/)
+カルーセル表示を実現するためのコンポーネント。
+### [amp-dailymotion](https://ampbyexample.com/components/amp-dailymotion/)
+[Dailymotion](https://www.dailymotion.com/)をサポートするためのコンポーネント。
+### [amp-date-countdown](https://ampbyexample.com/components/amp-date-countdown/)
+設定された日時までのカウントダウンを表示するためのコンポーネント。
+### [amp-date-picker](https://ampbyexample.com/components/amp-date-picker/)
+単一の日時や一定範囲の期間を選択表示するために使用するコンポーネント。
+### [amp-dynamic-css-classes](https://ampbyexample.com/components/amp-dynamic-css-classes/)
+
+### []()
+### []()
+### []()
+### []()
+### []()
+### []()
+### []()
+### []()
+### []()
+### []()
+### []()
+### []()
+### []()
+### []()
+### []()
+### []()
+### []()
+### []()
+### []()
+### []()
