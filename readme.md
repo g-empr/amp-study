@@ -40,4 +40,30 @@ Googleでの検索において、検索結果の上部に表示され、訪問�
 - [ ] `head`の最後に`<script async src="https://cdn.ampproject.org/v0.js"></script>`が記述されているか。
 
 ### コンテンツ部分
-- [ ] 
+- [ ] 下記の要素は使用されていないか。
+  - applet
+  - base
+  - embed
+  - form
+  - frame
+  - frameset
+  - object
+  - option
+  - param
+  - select
+  - textarea
+- [ ] 下記の要素は代替タグに変換されているか。
+  - img → amp-img
+  - video → amp-video
+  - audio → amp-audeo
+  - iframe → amp-iframe
+- [ ] Class名の先頭が`-amp-`で始まっていないか。
+- [ ] CSS部分の合計サイズは50kb以内に収まっているか。
+- [ ] CSSは`head`内の`<style amp-custom> ~ </style>`でのみ書き込まれているか。
+- [ ] CSS内のプロパティで`!important`が指定されているものはないか。
+- [ ] あああ
+### SEO関連
+- [ ] 導入されている広告システムはGoogle AdSenseのみか。
+- [ ] 導入されているアナリティクスはGoogle Tag Managerのみか。
+### その他
+- [ ] あああ
