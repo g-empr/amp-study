@@ -8,7 +8,7 @@ Googleでの検索において、検索結果の上部に表示され、訪問�
 ![検索結果画面](/img/amp-search.png)  
 ※AMPありの検索結果(左)とAMPなしの検索結果(右)
 
-## TL;DR
+## 基本構成
 以下のコードが基本の構成。
 ```HTML
 <!doctype html>
@@ -136,6 +136,7 @@ HTML5における`form`要素とそれに付随する各要素を代替するた
 パララックスやフェードインなど各種視覚効果を制御するためのコンポーネント。
 ### [amp-fx-flying-carpet](https://ampbyexample.com/components/amp-fx-flying-carpet/)
 フライングカーペットを設置するためのコンポーネント。  
+↓ こんなやつ。  
 ![フライングカーペット](/img/flying-carpet-ad.gif)
 ### [amp-geo](https://ampbyexample.com/components/amp-geo/)
 ISOの国コードをベースにユーザーのロケーションを取得できるコンポーネント。
@@ -173,10 +174,47 @@ Google AMPなどからService Workerをインストールするためのコン�
 一般的なlightboxの要素を提供するためのコンポーネント。
 ### [amp-list](https://ampbyexample.com/components/amp-list/)
 CORS JSONによる動的なコンテンツ表示をするためのコンポーネント。
-### []()
-### []()
-### []()
-### []()
-### []()
-### []()
-### []()
+### [amp-live-list](https://ampbyexample.com/components/amp-live-list/)
+ページ内でライブ更新を行うためのコンポーネント。
+### [amp-mustache](https://ampbyexample.com/components/amp-mustache/)
+mustache記法を用いて動的な表示をするためのコンポーネント。
+### [amp-next-page](https://ampbyexample.com/components/amp-next-page/)
+オートページャーを組み込むためのコンポーネント。
+### [amp-o2-player](https://ampbyexample.com/components/amp-o2-player/)
+[O2](https://www.o2.co.uk/)の動画を読み込むためのコンポーネント。
+### [amp-pinterest](https://ampbyexample.com/components/amp-pinterest/)
+[Pinterest](https://www.pinterest.jp/)のコンテンツを埋め込むためのコンポーネント。
+### [amp-pixel](https://ampbyexample.com/components/amp-pixel/)
+GETメソッドのリクエストを送るためのコンポーネント。
+### [amp-reach-player](https://ampbyexample.com/components/amp-reach-player/)
+[Beachfront Reach](http://beachfrontreach.com/)にホストした動画を読み込むためのコンポーネント。
+### [amp-reddit](https://ampbyexample.com/components/amp-reddit/)
+[reddit](https://www.reddit.com/)のコンテンツを埋め込むためのコンポーネント。
+### [amp-selector](https://ampbyexample.com/components/amp-selector/)
+formの選択肢を表示するためのコンポーネント。
+### [amp-sidebar](https://ampbyexample.com/components/amp-sidebar/)
+サイドバー/メニューを設置するためのコンポーネント。
+### [amp-social-share](https://ampbyexample.com/components/amp-social-share/)
+ソーシャルボタンを設置するためのコンポーネント。
+### [amp-soundcloud](https://ampbyexample.com/components/amp-soundcloud/)
+[SOUNDCLOUD](https://soundcloud.com/)の曲を再生するためのコンポーネント。
+### [amp-springboard-player](https://ampbyexample.com/components/amp-springboard-player/)
+[Springboard](http://www.springboardplatform.com/)にホストした動画を読み込むためのコンポーネント。
+### [amp-sticky-ad](https://ampbyexample.com/components/amp-sticky-ad/)
+スティッキー広告を表示するためのコンポーネント。
+### [amp-timeago](https://ampbyexample.com/components/amp-timeago/)
+経過時間をタイムスタンプ形式で表示するためのコンポーネント。
+### [amp-twitter](https://ampbyexample.com/components/amp-twitter/)
+[Twitter](https://twitter.com/)のコンテンツを読み込むためのコンポーネント。
+### [amp-user-notification](https://ampbyexample.com/components/amp-user-notification/)
+ユーザーへの警告を表示するためのコンポーネント。
+### [amp-video](https://ampbyexample.com/components/amp-video/)
+HTML5における`video`要素を代替するためのコンポーネント。該当ファイルはHTTPSで読み込む必要がある。
+### [amp-vimeo](https://ampbyexample.com/components/amp-vimeo/)
+[Vimeo](https://vimeo.com/jp)にホストした動画を読み込むためのコンポーネント。
+### [amp-vine](https://ampbyexample.com/components/amp-vine/)
+Vineの動画を読み込むためのコンポーネントだが、Vineは2017年をもってサービスを終了している。
+### [amp-youtube](https://ampbyexample.com/components/amp-youtube/)
+[YouTube](https://www.youtube.com/)の動画を読み込むためのコンポーネント。
+
+## 
