@@ -219,4 +219,26 @@ Vineの動画を読み込むためのコンポーネントだが、Vineは2017�
 ### [amp-youtube](https://ampbyexample.com/components/amp-youtube/)
 [YouTube](https://www.youtube.com/)の動画を読み込むためのコンポーネント。
 
-## 
+---
+## AMPとCORS
+### Same-Origin Policy
+Same-Origin Policyとは、URLの
+1. スキーム = `http://`, `https://`
+1. ホスト = `www.hogehoge.com`
+1. ポート = `80`
+
+をもとに固有のオリジン(Webページ)を定義し、同一のオリジン以外からのJavaScript等のリソースに対してのアクセスを制限するための仕組みのことである。  
+これによりセキュリティの強化が図られ、Webページの信頼性が保たれる。
+
+### CORS(Cross-Origin Resource Sharing)
+Same-Origin Policyの制約を緩和する役割を持つのがCORS(Cross-Origin Resource Sharing)である。  
+通常XMLHttpRequestオブジェクトはSame-Origin Policyの制約を受けるが、アクセス先ページのサーバ側で許可しておけばデータを取得することができる。
+
+```
+XMLHttpRequest(XHR)とは、JavaScriptを使用してサーバーにHTTPリクエストを行うためのAPIの一種で、すでに読み込みが完了したWebページからHTTPリクエストを送り、HTMLやXMLのデータを受信することができる。この際ページ遷移を伴う必要がなく、非同期に通信を行うことができる。
+```
+### AMPにおける設定など
+フロント側ではなくサーバ側での対応になるため割愛。以下参考ページ。
+- [CORS in AMP](https://www.ampproject.org/docs/fundamentals/amp-cors-requests)
+
+
