@@ -234,10 +234,10 @@ Same-Origin Policyとは、URLの
 Same-Origin Policyの制約を緩和する役割を持つのがCORS(Cross-Origin Resource Sharing)である。  
 通常XMLHttpRequestオブジェクトはSame-Origin Policyの制約を受けるが、アクセス先ページのサーバ側で許可しておけばデータを取得することができる。
 
-```
-XMLHttpRequest(XHR)とは、JavaScriptを使用してサーバーにHTTPリクエストを行うためのAPIの一種で、すでに読み込みが完了したWebページからHTTPリクエストを送り、HTMLやXMLのデータを受信することができる。この際ページ遷移を伴う必要がなく、非同期に通信を行うことができる。
-```
-### AMPにおける設定など
+### XMLHttpRequest(XHR)
+JavaScriptを使用してサーバーにHTTPリクエストを行うためのAPIの一種で、すでに読み込みが完了したWebページからHTTPリクエストを送り、HTMLやXMLのデータを受信することができる。この際ページ遷移を伴う必要がなく、非同期に通信を行うことができる。
+
+### AMPにおけるCORSの設定など
 フロント側ではなくサーバ側での対応になるため割愛。以下参考ページ。
 - [CORS in AMP](https://www.ampproject.org/docs/fundamentals/amp-cors-requests)
 
