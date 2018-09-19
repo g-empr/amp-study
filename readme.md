@@ -242,3 +242,4 @@ JavaScriptを使用してサーバーにHTTPリクエストを行うためのAPI
 - [CORS in AMP](https://www.ampproject.org/docs/fundamentals/amp-cors-requests)
 
 
+## 
