@@ -164,7 +164,7 @@ Same-Origin Policyとは、URLの
 
 ### CORS(Cross-Origin Resource Sharing)
 Same-Origin Policyの制約を緩和する役割を持つのがCORS(Cross-Origin Resource Sharing)である。  
-通常XMLHttpRequestオブジェクトはSame-Origin Policyの制約を受けるが、アクセス先ページのサーバ側で許可しておけばデータを取得することができる。
+通常XMLHttpRequestオブジェクトはSame-Origin Policyの制約を受けるが、アクセス先ページのHTTPレスポンスヘッダで許可しておけば、ブラウザでデータを取得することができる。
 
 ### XMLHttpRequest(XHR)
 JavaScriptを使用してサーバーにHTTPリクエストを行うためのAPIの一種で、すでに読み込みが完了したWebページからHTTPリクエストを送り、HTMLやXMLのデータを受信することができる。この際ページ遷移を伴う必要がなく、非同期に通信を行うことができる。
