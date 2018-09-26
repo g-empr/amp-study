@@ -152,6 +152,36 @@ JavaScriptが使用できないため、動的な要素はAMPのライブラリ�
 |[amp-youtube](https://ampbyexample.com/components/amp-youtube/) | [YouTube](https://www.youtube.com/)の動画を読み込むためのコンポーネント。 |
 
 ---
+## 高度な利用
+コンポーネントの高度な利用について。複数組み合わせることで実現できる実装内容もある。  
+  
+| 実装 | 内容 | 使用コンポーネント |
+| --- | --- | --- |
+| [サジェスト機能](https://ampbyexample.com/advanced/autosuggest/) | `form`での自動入力/入力補助。 | amp-form<br>amp-selector<br>amp-list<br>amp-mustache<br>amp-bind |
+| [動画再生用オーバーレイ](https://ampbyexample.com/advanced/click-to-play_overlay_for_amp-video/) | 動画上にカスタムオーバーレイ。 | amp-video |
+| [コンボボックス](https://ampbyexample.com/advanced/combobox/) | コンボボックスの実装。 | amp-selector<br>amp-bind<br>amp-list<br>amp-mustache |
+| [コピーボタン](https://ampbyexample.com/advanced/copy_button/) | クリップボードへのコピーボタン。 | amp-iframe |
+| [カスタムローディング](https://ampbyexample.com/advanced/custom_loading_indicators/) | ローディングインジケータをカスタム。 | amp-list |
+| [お気に入りボタン](https://ampbyexample.com/advanced/favorite_button/) | お気に入りボタンの実装。 | amp-list<br>amp-mustache<br>amp-form<br>amp-bind |
+| [AMP内でのジオロケーション](https://ampbyexample.com/advanced/geolocation_with_amp-list/) | AMP内での位置情報の取り扱い。 | amp-list<br>amp-mustache |
+| [寸法不明な画像のサポート](https://ampbyexample.com/advanced/how_to_support_images_with_unknown_dimensions/) | 寸法のわからない画像の取り扱い。 | - |
+| [amp-carouselによるイメージギャラリー](https://ampbyexample.com/advanced/image_galleries_with_amp-carousel/) | amp-carouselによるイメージギャラリー。 | amp-carousel<br>amp-fit-text<br>amp-selector<br>amp-bind<br>amp-lightbox-gallery |
+| [AMP内での埋め込み動画の取り扱い](https://ampbyexample.com/advanced/integrating_videos_in_amp_an_overview/) | 各媒体ごとの実装時の違いなど。 | - |
+| [レイアウトシステム](https://ampbyexample.com/advanced/layout_system/) | AMP内での要素の配置法。 | - |
+| [ドロップダウンリストの紐付け](https://ampbyexample.com/advanced/linked_dropdowns/) | 上位リストを下位リストに紐付けて絞り込む。 | amp-bind<br>amp-list<br>amp-mustache |
+| [amp-instagramによる埋め込みのロングリスト](https://ampbyexample.com/advanced/long_list_of_amp-instagram_embeds/) | amp-instagramによる埋め込みのロングリスト。 | amp-instagram |
+| [リストのページ化](https://ampbyexample.com/advanced/paged_list/) | リスト構造の各ページ化。 | amp-bind<br>amp-list<br>amp-mustache |
+| [AMP内での決済](https://ampbyexample.com/advanced/payments_in_amp/) | AMPページへの決済実装。 | amp-iframe |
+| [リッチなメディア通知UI](https://ampbyexample.com/advanced/rich_media_notifications/) | 通知UIをカスタム。 | amp-video |
+| [座席表](https://ampbyexample.com/advanced/seatmap/) | インタラクティブな座席表。 | [amp-pan-zoom](https://www.ampproject.org/docs/reference/components/amp-pan-zoom)<br>amp-bind<br>amp-list<br>amp-mustache |
+| [もっと見るボタン](https://ampbyexample.com/advanced/show_more_button/) | もっと見るボタンの実装。 | amp-list<br>amp-bind<br>amp-form<br>amp-mustache |
+| [5つ星評価](https://ampbyexample.com/advanced/star_rating/) | 5つ星評価UIの実装。 | amp-form |
+| [amp-selectorによるタブパネル](https://ampbyexample.com/advanced/tab_panels_with_amp-selector/) | amp-selectorによるタブパネルの実装。 | amp-selector<br>amp-carousel<br>amp-bind |
+| [AMP URL APIの利用](https://ampbyexample.com/advanced/using_the_amp_url_api/) | URLから該当のAMP版URLを検索する。 | - |
+| [Google AMP Cacheの利用](https://ampbyexample.com/advanced/using_the_google_amp_cache/) | 表示高速化のためのGACの利用。 | - |
+| [amp-carouselによる動画カルーセル](https://ampbyexample.com/advanced/video_carousels_with_amp-carousel/) | amp-carouselによる動画ギャラリー実装。 | amp-carousel |
+| [ヒント付きの動画のフルスクリーン表示](https://ampbyexample.com/advanced/video_rotate_to_fullscreen_with_hint/) | ヒント付きの動画のフルスクリーン表示。 | amp-video<br>amp-animation |
+---
 ## AMPとCORS
 ### Same-Origin Policy
 Same-Origin Policyとは、URLの
