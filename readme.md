@@ -1,6 +1,6 @@
 # AMPまとめ
 ![ロゴ](/img/amp.jpg)
-## AMP(Accelerated Mobile Pages)とは？
+## AMP(Accelerated Mobile Pages)とは
 GoogleとTwitterで共同開発されている、スマホなどのモバイル端末でウェブページを高速表示するためのプロジェクト、またはそのためのフレームワーク(AMP HTML)。  
   
 Googleでの検索において、検索結果の上部に表示され、訪問者またはCVを増やすことに貢献できるモバイルコーディングの新基準である。  
