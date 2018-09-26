@@ -78,9 +78,14 @@ AMP HTMLに対して以下項目をチェックする。
 - [ ] 導入されているアナリティクスはGoogle Tag Managerのみか。
 ---
 ## AMPコンポーネント
-JavaScriptが使用できないため、動的な要素はAMPのライブラリからインクルードして設置することになる。
+JavaScriptが使用できないため、動的な要素はAMPのライブラリからインクルードして設置することになる。  
+|  TH  |  TH  |
+| ---- | ---- |
+|  TD  |  TD  |
+|  TD  |  TD  |
+  
 | コンポーネント名 | 用途 |
-| --- | --- |
+| - | - |
 |[amp-3d-gltf](https://ampbyexample.com/components/amp-3d-gltf/) | glTFフォーマットのアセットを読み込み3Dモデルを表示するためのコンポーネント。 |
 |[amp-access-laterpay](https://ampbyexample.com/components/amp-access-laterpay/) | [Laterpay](https://www.laterpay.net/)と連携するためのコンポーネント。後述の`amp-access`が必要になる。 |
 |[amp-access](https://ampbyexample.com/components/amp-access/) | ログイン機能などユーザー認証に関する動的要素を組み込めるコンポーネント。 |
