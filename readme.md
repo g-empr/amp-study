@@ -181,6 +181,17 @@ JavaScriptが使用できないため、動的な要素はAMPのライブラリ�
 | [Google AMP Cacheの利用](https://ampbyexample.com/advanced/using_the_google_amp_cache/) | 表示高速化のためのGACの利用。 | - |
 | [amp-carouselによる動画カルーセル](https://ampbyexample.com/advanced/video_carousels_with_amp-carousel/) | amp-carouselによる動画ギャラリー実装。 | amp-carousel |
 | [ヒント付きの動画のフルスクリーン表示](https://ampbyexample.com/advanced/video_rotate_to_fullscreen_with_hint/) | ヒント付きの動画のフルスクリーン表示。 | amp-video<br>amp-animation |
+  
+### 動的なAMPページ
+基本的にAMP HTMLはキャッシュデータを表示するためのものだが、動的要素との連携がスムーズに行えるようにも設計されている。  
+  
+| テーマ | 内容 |
+| --- | --- |
+| [クライアントサイドでのフィルタリング](https://ampbyexample.com/dynamic_amp/client-side%20filtering/) | クライアントサイドで動的に要素を操作する際のTips。 |
+| [ユーザーのインタラクション後の動的要素](https://ampbyexample.com/dynamic_amp/dynamic_content_after_user-interaction/) | ユーザのクリックやチェックなどを適用したあとの要素や値の変化について。 |
+| [AMP内でのインタラクティブコンテンツの埋め込み方](https://ampbyexample.com/dynamic_amp/how_to_embed_interactive_elements_on_amp_pages/) | インタラクティブコンテンツをどうAMP内に埋め込み、表示するか。 |
+| [動的要素とキャッシュデータの混合](https://ampbyexample.com/dynamic_amp/mixing_dynamic_and_cached_data/) | AMPキャッシュと動的要素を両立して使うためのTips。 |
+| [AMPにおける複数ステップのフロー](https://ampbyexample.com/dynamic_amp/multi_page_flow/) | 複数のステップを持つ要素やコンテンツのフローを動的に操作する。 |
 ---
 ## AMPとCORS
 ### Same-Origin Policy
