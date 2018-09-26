@@ -79,10 +79,6 @@ AMP HTMLに対して以下項目をチェックする。
 ---
 ## AMPコンポーネント
 JavaScriptが使用できないため、動的な要素はAMPのライブラリからインクルードして設置することになる。  
-|  TH  |  TH  |
-| ---- | ---- |
-|  TD  |  TD  |
-|  TD  |  TD  |
   
 | コンポーネント名 | 用途 |
 | - | - |
@@ -114,10 +110,7 @@ JavaScriptが使用できないため、動的な要素はAMPのライブラリ�
 |[amp-font](https://ampbyexample.com/components/amp-font/) | フォントの読み込みを制御するためのコンポーネント。 |
 |[amp-form](https://ampbyexample.com/components/amp-form/) | HTML5における`form`要素とそれに付随する各要素を代替するためのコンポーネント。 |
 |[amp-fx-collection](https://ampbyexample.com/components/amp-fx-collection/) | パララックスやフェードインなど各種視覚効果を制御するためのコンポーネント。 |
-|[amp-fx-flying-carpet](https://ampbyexample.com/components/amp-fx-flying-carpet/) | フライングカーペットを設置するためのコンポーネント。 |
-↓ こんなやつ。  
-  
-![フライングカーペット](/img/flying-carpet-ad.gif)
+|[amp-fx-flying-carpet](https://ampbyexample.com/components/amp-fx-flying-carpet/) | フライングカーペットを設置するためのコンポーネント。<br>↓こんなやつ。<br>![フライングカーペット](/img/flying-carpet-ad.gif) |
 |[amp-geo](https://ampbyexample.com/components/amp-geo/) | ISOの国コードをベースにユーザーのロケーションを取得できるコンポーネント。 |
 |[amp-gfycat](https://ampbyexample.com/components/amp-gfycat/) | [fycat](https://gfycat.com/)からanimated GIFを読み込むためのコンポーネント。 |
 |[amp-gist](https://ampbyexample.com/components/amp-gist/) | [Gist](https://gist.github.com/)から単一のファイル、またはGist全体を読み込むためのコンポーネント。 |
