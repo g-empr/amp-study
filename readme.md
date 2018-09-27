@@ -214,5 +214,4 @@ JavaScriptを使用してサーバーにHTTPリクエストを行うためのAPI
 ### AMPにおけるCORSの設定など
 フロント側ではなくサーバ側での対応になるため割愛。以下参考ページ。
 - [CORS in AMP](https://www.ampproject.org/docs/fundamentals/amp-cors-requests)
-
 - [CORS Requests in AMP のざっくり訳](https://qiita.com/HeRo/items/b79260e3502247930992)
