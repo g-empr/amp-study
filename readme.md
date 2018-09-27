@@ -194,6 +194,7 @@ JavaScriptが使用できないため、動的な要素はAMPのライブラリ�
 | [AMPにおける複数ステップのフロー](https://ampbyexample.com/dynamic_amp/multi_page_flow/) | 複数のステップを持つ要素やコンテンツのフローを動的に操作する。 |
 ---
 ## AMPとCORS
+AMP HTML内では外部ページとの通信において、XHRを介してオブジェクトのやり取りを行う。その際にサーバ側のレスポンスヘッダにAMP特有の記述をする必要がある。
 ### Same-Origin Policy
 Same-Origin Policyとは、URLの
 1. スキーム = `http://`, `https://`
@@ -214,4 +215,4 @@ JavaScriptを使用してサーバーにHTTPリクエストを行うためのAPI
 フロント側ではなくサーバ側での対応になるため割愛。以下参考ページ。
 - [CORS in AMP](https://www.ampproject.org/docs/fundamentals/amp-cors-requests)
 
-
+- [CORS Requests in AMP のざっくり訳](https://qiita.com/HeRo/items/b79260e3502247930992)
