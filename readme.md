@@ -1,6 +1,6 @@
-# <span style="color:orange;">AMPまとめ</span>
+# AMPまとめ
 ![ロゴ](/img/amp.jpg)
-## <span style="color:#FF8000;">AMP(Accelerated Mobile Pages)とは</span>
+## AMP(Accelerated Mobile Pages)とは
 GoogleとTwitterで共同開発されている、スマホなどのモバイル端末でウェブページを高速表示するためのプロジェクト、またはそのためのフレームワーク(AMP HTML)。  
   
 Googleでの検索において、検索結果の上部に表示され、訪問者またはCVを増やすことに貢献できるモバイルコーディングの新基準である。  
@@ -8,7 +8,7 @@ Googleでの検索において、検索結果の上部に表示され、訪問�
 ![検索結果画面](/img/amp-search.png)  
 ※AMPありの検索結果(左)とAMPなしの検索結果(右)
 
-## <span style="color:#FF8000;">基本構成</span>
+## 基本構成
 以下のコードが基本の構成。
 ```HTML
 <!doctype html>
@@ -27,7 +27,7 @@ Googleでの検索において、検索結果の上部に表示され、訪問�
 </html>
 ```
 ---
-## <span style="color:#FF8000;">検証(AMP導入前)</span>
+## 検証(AMP導入前)
 AMP HTML移行対象のソースコードを見ながら以下項目を検証し、AMP HTMLにする際に影響度の高いものをまとめていく。
 - [ ] JavaScript/jQueryがどれだけ使われている(読み込まれている)か。(AMP内では専用ライブラリしか使えないため)
   - [ ] そのうち、AMPコンポーネントで代替できるものはどれか。
@@ -37,9 +37,9 @@ AMP HTML移行対象のソースコードを見ながら以下項目を検証し
 - [ ] 使用中のCSSプロパティの中に`!important`がどれだけ含まれているか。
 - [ ] 仕様が制限されている要素がコード内にどれだけ含まれているか。
 ---
-## <span style="color:#FF8000;">検証(AMP導入後)</span>
+## 検証(AMP導入後)
 AMP HTMLに対して以下項目をチェックする。
-### <span style="color:#9FF781;">meta部分</span>
+### meta部分
 - [ ] `html`要素とともにamp、または⚡が宣言されているか。
 - [ ] `head`の最初に`<meta charset="utf-8">`が記述されているか。
 - [ ] `head`に`<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">`が記述されているか。
@@ -51,7 +51,7 @@ AMP HTMLに対して以下項目をチェックする。
 ```
 - [ ] `head`の最後に`<script async src="https://cdn.ampproject.org/v0.js"></script>`が記述されているか。
 
-### <span style="color:#9FF781;">コンテンツ部分</span>
+### コンテンツ部分
 - [ ] 下記の要素は使用されていないか。
   - applet
   - base
@@ -73,11 +73,11 @@ AMP HTMLに対して以下項目をチェックする。
 - [ ] CSSは`head`内の`<style amp-custom> ~ </style>`でのみ書き込まれているか。
 - [ ] CSS内のプロパティで`!important`が指定されているものはないか。
 - [ ] JavaScriptやjQueryを外部から読み込んでいないか。または、それらがHTML内に記述されていないか。
-### <span style="color:#9FF781;">SEO関連</span>
+### SEO関連
 - [ ] 導入されている広告システムはGoogle AdSenseのみか。
 - [ ] 導入されているアナリティクスはGoogle Tag Managerのみか。
 ---
-## <span style="color:#FF8000;">AMPコンポーネント</span>
+## AMPコンポーネント
 JavaScriptが使用できないため、動的な要素はAMPのライブラリからインクルードして設置することになる。  
   
 | コンポーネント名 | 用途 |
@@ -152,7 +152,7 @@ JavaScriptが使用できないため、動的な要素はAMPのライブラリ�
 |[amp-youtube](https://ampbyexample.com/components/amp-youtube/) | [YouTube](https://www.youtube.com/)の動画を読み込むためのコンポーネント。 |
 
 ---
-## <span style="color:#FF8000;">高度な利用</span>
+## 高度な利用
 コンポーネントの高度な利用について。複数組み合わせることで実現できる実装内容もある。  
   
 | 実装 | 内容 | 使用コンポーネント |
@@ -182,7 +182,7 @@ JavaScriptが使用できないため、動的な要素はAMPのライブラリ�
 | [amp-carouselによる動画カルーセル](https://ampbyexample.com/advanced/video_carousels_with_amp-carousel/) | amp-carouselによる動画ギャラリー実装。 | amp-carousel |
 | [ヒント付きの動画のフルスクリーン表示](https://ampbyexample.com/advanced/video_rotate_to_fullscreen_with_hint/) | ヒント付きの動画のフルスクリーン表示。 | amp-video<br>amp-animation |
   
-## <span style="color:#FF8000;">動的なAMPページ</span>
+## 動的なAMPページ
 基本的にAMP HTMLはキャッシュデータを表示するためのものだが、動的要素との連携がスムーズに行えるようにも設計されている。  
   
 | テーマ | 内容 |
@@ -193,7 +193,7 @@ JavaScriptが使用できないため、動的な要素はAMPのライブラリ�
 | [動的要素とキャッシュデータの混合](https://ampbyexample.com/dynamic_amp/mixing_dynamic_and_cached_data/) | AMPキャッシュと動的要素を両立して使うためのTips。 |
 | [AMPにおける複数ステップのフロー](https://ampbyexample.com/dynamic_amp/multi_page_flow/) | 複数のステップを持つ要素やコンテンツのフローを動的に操作する。 |
 ---
-## <span style="color:#FF8000;">AMPとCORS</span>
+## AMPとCORS
 ### Same-Origin Policy
 Same-Origin Policyとは、URLの
 1. スキーム = `http://`, `https://`
