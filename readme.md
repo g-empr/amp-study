@@ -193,6 +193,65 @@ JavaScriptが使用できないため、動的な要素はAMPのライブラリ�
 | [動的要素とキャッシュデータの混合](https://ampbyexample.com/dynamic_amp/mixing_dynamic_and_cached_data/) | AMPキャッシュと動的要素を両立して使うためのTips。 |
 | [AMPにおける複数ステップのフロー](https://ampbyexample.com/dynamic_amp/multi_page_flow/) | 複数のステップを持つ要素やコンテンツのフローを動的に操作する。 |
 ---
+## 構造化データ
+### 構造化データとは
+構造化データ(Structured Data)とは、__ロボットがWebページの内容と意味を理解しやすいようにメタデータとして記述する情報__ のことである。  
+そのWebページの構造化データがあれば、検索エンジンのロボットがコンテンツを取得しやすくなったり、リッチスニペット表示などユーザーにとってさらに受け取りやすい形に検索表示を整形してくれたりなどのメリットがある。
+### AMPでの利用
+AMPをモバイル検索でカルーセル表示させる場合、構造化データが必要になる。  
+ただし、通常の検索リストに載せる際には構造化データは不要である。  
+記述としては以下のようになり、`head`内に記述する。
+```json
+  <script type="application/ld+json">
+    {
+      // schemaの宣言
+      "@context": "http://schema.org",
+      // コンテンツのタイプ
+      "@type": "BlogPosting",
+      // タイトル
+      "headline": "(ここにタイトル)",
+      // 内容説明
+      "description": "(ここに説明など)",
+      // ページのタイプやURL
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.example.co.jp/"
+      },
+      // 公開日時
+      "datePublished": "2018-09-29T10:41:55+09:00",
+      // 最終更新日時
+      "dateModified": "2018-09-30T10:21:34+09:00",
+      // 投稿者について
+      "author": {
+        "@type": "Organization",
+        "name": "なんとかかんとか株式会社"
+      },
+      // 公開者について
+      "publisher": {
+        "@type": "Organization",
+        "name": "なんとかかんとか株式会社",
+        // カルーセル掲載時に表示されるロゴ
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.example.co.jp/img/logo_amp.png",
+          "width": "342",
+          "height": "60"
+        }
+      },
+      // カルーセルに表示されるサムネイル画像
+      "image": {
+        "@type": "ImageObject",
+        "url": "http://www.example.co.jp/img/logo_amp_eyecatch.png",
+        "width": 696,
+        "height": 241
+      }
+    }
+  </script>
+```
+
+- 参考: [AMP HTMLに構造化データを記述する](https://www.mitsue.co.jp/knowledge/blog/frontend/201612/27_1611.html)
+
+---
 ## AMPとCORS
 AMP HTML内では外部ページとの通信において、XHRを介してオブジェクトのやり取りを行う。その際にサーバ側のレスポンスヘッダにAMP特有の記述をする必要がある。
 ### Same-Origin Policy
@@ -209,9 +268,9 @@ Same-Origin Policyの制約を緩和する役割を持つのがCORS(Cross-Origin
 通常XMLHttpRequestオブジェクトはSame-Origin Policyの制約を受けるが、アクセス先ページのHTTPレスポンスヘッダで許可しておけば、ブラウザでデータを取得することができる。
 
 ### XMLHttpRequest(XHR)
-JavaScriptを使用してサーバーにHTTPリクエストを行うためのAPIの一種で、すでに読み込みが完了したWebページからHTTPリクエストを送り、HTMLやXMLのデータを受信することができる。この際ページ遷移を伴う必要がなく、非同期に通信を行うことができる。
+JavaScriptを使用してサーバーにHTTPリクエストを行うためのAPIの一種で、すでに読み込みが完了したWebページからHTTPリクエストを送り、HTMLやXMLのデータを受信することができる。ページの通常遷移の必要がなく、非同期に通信を行うことができる。
 
 ### AMPにおけるCORSの設定など
 フロント側ではなくサーバ側での対応になるため割愛。以下参考ページ。
-- [CORS in AMP](https://www.ampproject.org/docs/fundamentals/amp-cors-requests)
-- [CORS Requests in AMP のざっくり訳](https://qiita.com/HeRo/items/b79260e3502247930992)
+- 参考: [CORS in AMP](https://www.ampproject.org/docs/fundamentals/amp-cors-requests)
+- 参考: [CORS Requests in AMP のざっくり訳](https://qiita.com/HeRo/items/b79260e3502247930992)
