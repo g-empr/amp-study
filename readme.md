@@ -76,6 +76,7 @@ AMP HTMLに対して以下項目をチェックする。
 ### SEO関連
 - [ ] 導入されている広告システムはGoogle AdSenseのみか。
 - [ ] 導入されているアナリティクスはGoogle Tag Managerのみか。
+- [ ] AMPの元となったページに`<link rel="amphtml" href="https://example-amp-url.jp/">`が記述されているか。
 ---
 ## AMPコンポーネント
 JavaScriptが使用できないため、動的な要素はAMPのライブラリからインクルードして設置することになる。  
