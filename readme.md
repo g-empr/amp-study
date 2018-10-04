@@ -8,6 +8,9 @@ Googleでの検索において、検索結果の上部に表示され、訪問�
 ![検索結果画面](/img/amp-search.png)  
 ※AMPありの検索結果(左)とAMPなしの検索結果(右)
 
+- 参考: [AMPの導入と効果について](https://techblog.zozo.com/entry/amp)
+- 参考: [Googleが推進するAMPとは？概要と対応方法まとめ](https://digitalidentity.co.jp/blog/seo/amp/what-is-amp.html#AMPAMP)
+
 ## 基本構成
 以下のコードが基本の構成。
 ```HTML
